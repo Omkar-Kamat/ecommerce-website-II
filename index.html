@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!-- Font-Awesome icon library  -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Our CSS file-->
+</head>
+<body>
+<div class="flex">
+    <div id="logo-div" class="">
+        <div id="bars-div" class="">
+            <i class="fa-solid fa-bars fa-2xl" id="bars"></i><br><span>Menu</span>
+        </div>
+        <div id="cart-div" class="">
+            <i class="fa-solid fa-cart-shopping fa-2xl" id="cart"></i><br><span>Cart</span>
+        </div>
+        <div id="wishlist-div" class="">
+            <i class="fa-solid fa-heart fa-2xl" id="wishlist"></i><br><span>Wishlist</span>
+        </div>
+        <div id="search-glass-div" class="">
+            <i class="fa-solid fa-magnifying-glass fa-2xl" id="search-glass"></i><br><span>Search</span>
+        </div>
+        <div id="logo" class="">
+            <a href="./index.html">Fashion.</a>
+        </div>
+    </div>
+     
+    <main id="main-content" class="">
+        <div id="searchbar-tab" >
+            <div class="cross"><i id="search-close" class="fa-solid fa-xmark fa-2xl"></i></div>
+            <input type="text" id="search-bar" placeholder="-   Search   -">
+            <div class="search-bar-suggest">
+            </div>
+        </div>
+        <div id="menubar-tab" class="">
+            <span class="cross"><i id="menu-close" class="fa-solid fa-xmark fa-2xl"></i></span>
+            <div class="" id="home" onclick="homePage()">
+                Home
+            </div><hr class="line">
+            <div class="" id="login">
+                Login
+            </div><hr class="line">
+            <div class="">
+                Catalog
+            </div><hr class="line">
+            <div class="">
+                Shop
+            </div><hr class="line">
+            <div class="" id="aboutus">
+                About Us
+            </div><hr class="line">
+        </div>
+
+
+        <div id="login-page" class="">
+                <form class="" id="login-form">
+                    <span class="cross"><i id="login-close" class="fa-solid fa-xmark fa-2xl"></i></span><br>
+                    <h1>Fashion.</h1>
+                    <h2>ACCOUNT</h2>
+                    <input type="email" id="email" placeholder="EMAIL" class="login-input" required>
+                    <br><br>
+                    
+                    <input type="password" id="password" placeholder="PASSWORD" class="login-input" required>
+                    <br><br>
+                    <div onclick="signupForm()" id="log2sign"><small>Don't have an account yet? Sign Up</small></div><br>
+                    <input type="submit" value="LOGIN" id="form-btn">
+                    <br>
+                </form>
+        </div>
+        <div id="signup-page">        
+                <form id="signup-form" class="">
+                    <span class="cross"><i id="signup-close" class="fa-solid fa-xmark fa-2xl"></i></span><br>
+                    <h1>Fashion.</h1>
+                    <h2>CREATE ACCOUNT</h2>
+                    <input type="text" id="name" placeholder="NAME" class="login-input"><br><br>
+                    <input type="email" id="email" placeholder="EMAIL" class="login-input" required>
+                    <br><br>
+                    
+                    <input type="password" id="password" placeholder="PASSWORD" class="login-input" required>
+                    <br><br>
+                    <div onclick="sign2login()" id="log2sign"><small>Already have an account? login</small></div><br>
+                    <input type="submit" value="CREATE" id="form-btn">
+                    <br>
+                </form>
+        </div> 
+
+
+        <div id="about-us" class="">
+            <div class="about">
+                <span class="cross"><i id="about-close" class="fa-solid fa-xmark fa-2xl"></i></span><br>
+               <h1> About us</h1>
+                <ul>
+                    <li>
+                        <ul>
+                            <li>Kamat Omkar Vidyadhar</li>
+                            <li>12320650</li>
+                            <li>Section K23CA</li>
+                            <li>Roll No. 01</li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li>
+                        <ul>
+                            <li>Pushpendra Singh</li>
+                            <li>12323358</li>
+                            <li>Section K23CA</li>
+                            <li>Roll No. 03</li>
+                        </ul>
+                    </li>
+                    <hr>
+                    <li>
+                        <ul>
+                            <li>Avunoori Shanmukharaj</li>
+                            <li>12310781</li>
+                            <li>Section K23CA</li>
+                            <li>Roll No. 33</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <div id="content">
+            <section class="flex container">
+                <div class="slide" id="ad1">
+
+                    <div id="ad1-label">
+                        <h1>GLASSES</h1>
+                        <h3>SALE! SALE! SALE!</h3>
+                        <div class="shop-btn" type="button" href="./test.html" id="ad1-btn" >SHOP</div>
+                    </div> 
+                                   
+                </div>
+                <div class="slide" id="ad2">
+
+                    <div id="ad2-label">
+                        <h1>DENIMS</h1>
+                        <h3>31% OFF ON ALL DENIMS</h3>
+                        <div class="shop-btn" id="ad2-btn" >SHOP</div>
+                    </div> 
+                
+                </div>
+                <div class="slide" id="ad3">
+                    
+                    <div id="ad3-label">
+                        <h1>TRADITIONAL WEAR</h1>
+                        <h3>SAREES, KURTA AND MANY MORE</h3>
+                        <div class="shop-btn" id="ad3-btn" >SHOP</div>
+                    </div>  
+                </div>
+            </section>
+
+            <div class="adv"><i class="fa-regular fa-star"></i>&nbsp;DIWALI OFFER : 31% OFF ON TRADITIONAL WEARS&nbsp;<i class="fa-regular fa-star"></i></div>
+            <div id="slide-r">
+                <i class="fa-solid fa-chevron-right fa-2xl" id="right-slide"></i>
+            </div>
+            
+            
+            
+            
+            <div class="adv-2">
+                <span><i class="fa-solid fa-truck "></i>&nbsp;&nbsp;FREE SHIPPING</span>
+                <span><i class="fa-solid fa-repeat "></i>&nbsp;&nbsp;10 DAYS RETURN AND CASH BACK POLICY</span>
+                <span><i class="fa-solid fa-shirt " ></i>&nbsp;&nbsp;OVER 8000+ STYLES</span>
+            </div>
+
+                <div class="heading">- POPULAR BUYS -</div>
+
+            <div id="showcase" class="">
+
+                <div class="flex tab-set">
+
+                    <div class="tab">
+                        <img src="./image/women1.jpeg" id="img1">
+                        <img src="./image/women2.jpeg" class="img-part-2">
+                        <div class="wish-cart">
+                            <i class="fa-solid fa-heart wishlist"></i><br>
+                            <i class="fa-solid fa-cart-shopping cart"></i>
+                        </div>
+                        <div class="prod-label"><span>SAREE</span><br><span class="price">PRICE - ₹1500</span></div>
+                    </div>   
+                
+                    <div class="tab">
+                        <img src="./image/men1.jpeg" id="img2">
+                        <img src="./image/men2.jpeg" class="img-part-2">
+                        <div class="wish-cart">
+                            <i class="fa-solid fa-heart wishlist"></i><br>
+                            <i class="fa-solid fa-cart-shopping cart"></i>
+                        </div>
+                        <div class="prod-label"><span>KURTA</span><br><span class="price">PRICE - ₹900</span></div>
+                    </div>   
+                
+                    <div class="tab">
+                        <img src="./image/shoes1.jpeg" id="img3">
+                        <img src="./image/shoes2.jpeg" class="img-part-2">
+                            <div class="wish-cart">
+                            <i class="fa-solid fa-heart wishlist"></i><br>
+                            <i class="fa-solid fa-cart-shopping cart"></i>
+                            </div>
+                        <div class="prod-label"><span>GYM SHOES</span><br><span class="price">PRICE - ₹1200</span></div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="./image/glasses1.jpeg" id="img4">
+                        <img src="./image/glasses2.jpeg" class="img-part-2">
+                            <div class="wish-cart">
+                            <i class="fa-solid fa-heart wishlist"></i><br>
+                            <i class="fa-solid fa-cart-shopping cart"></i>
+                            </div>
+                        <div class="prod-label"><span>SUNGLASSES</span><br><span class="price">PRICE - ₹500</span></div>
+                    </div> 
+
+                </div>
+                
+
+
+
+                <div class="flex tab-set">
+                
+                    <div class="tab">
+                        <img src="./image/women3.jpeg" id="img5">
+                        <img src="./image/women4.jpeg" class="img-part-2">
+                        <div class="wish-cart">
+                            <i class="fa-solid fa-heart wishlist"></i><br>
+                            <i class="fa-solid fa-cart-shopping cart"></i>
+                        </div>
+                        <div class="prod-label"><span>OVERCOAT</span><br><span class="price">PRICE - ₹1300</span></div>
+                    </div>   
+                
+                    <div class="tab">
+                        <img src="./image/men5.jpeg" id="img10">
+                        <img src="./image/men6.jpeg" class="img-part-2">
+                        <div class="wish-cart">
+                            <i class="fa-solid fa-heart wishlist"></i><br>
+                            <i class="fa-solid fa-cart-shopping cart"></i>
+                        </div>
+                        <div class="prod-label"><span>PRINTED SHIRT</span><br><span class="price">PRICE - ₹600</span></div>
+                    </div> 
+
+                    <div class="tab">
+                        <img src="./image/shoes3.jpeg" id="img7">
+                        <img src="./image/shoes4.jpeg" class="img-part-2">
+                        <div class="wish-cart">
+                            <i class="fa-solid fa-heart wishlist"></i><br>
+                            <i class="fa-solid fa-cart-shopping cart"></i>
+                        </div>
+                        <div class="prod-label"><span>SNEAKER</span><br><span class="price">PRICE - ₹1600</span></div>
+                    </div>   
+                
+                    <div class="tab">
+                        <img src="./image/glasses3.jpeg" id="img8">
+                        <img src="./image/glasses4.jpeg" class="img-part-2">
+                        <div class="wish-cart">
+                            <i class="fa-solid fa-heart wishlist"></i><br>
+                            <i class="fa-solid fa-cart-shopping cart"></i>
+                        </div>
+                        <div class="prod-label"><span>UV GLASSES</span><br><span class="price">PRICE - ₹1000</span></div>
+                    </div> 
+                      
+                </div>  
+                
+                
+
+                
+                <div class="flex tab-set">
+                
+                    <div class="tab">
+                        <img src="./image/women5.jpeg" id="img9">
+                        <img src="./image/women6.jpeg" class="img-part-2">
+                        <div class="wish-cart">
+                            <i class="fa-solid fa-heart wishlist"></i><br>
+                            <i class="fa-solid fa-cart-shopping cart"></i>
+                        </div>
+                        <div class="prod-label"><span>DRESS</span><br><span class="price">PRICE - ₹900</span></div>
+                    </div>
+
+                    <div class="tab">
+                        <img src="./image/men3.jpeg" id="img6">
+                        <img src="./image/men4.jpeg" class="img-part-2">
+                        <div class="wish-cart">
+                            <i class="fa-solid fa-heart wishlist"></i><br>
+                            <i class="fa-solid fa-cart-shopping cart"></i>
+                        </div>
+                        <div class="prod-label"><span>BLAZER</span><br><span class="price">PRICE - ₹1100</span></div>
+                    </div>   
+                
+                    <div class="tab">
+                        <img src="./image/shoes5.jpeg" id="img11">
+                        <img src="./image/shoes6.jpeg" class="img-part-2">
+                        <div class="wish-cart">
+                            <i class="fa-solid fa-heart wishlist"></i><br>
+                            <i class="fa-solid fa-cart-shopping cart"></i>
+                        </div>
+                        <div class="prod-label"><span>SHOES</span><br><span class="price">PRICE - ₹1400</span></div>
+                    </div>   
+                
+                    <div class="tab">
+                        <img src="./image/glasses5.jpeg" id="img12">
+                        <img src="./image/glasses6.jpeg" class="img-part-2">
+                        <div class="wish-cart">
+                            <i class="fa-solid fa-heart wishlist"></i><br>
+                            <i class="fa-solid fa-cart-shopping cart"></i>
+                        </div>
+                        <div class="prod-label"><span>RIMLESS GLASSES</span><br><span class="price">PRICE - ₹700</span></div>
+                     </div>   
+
+                </div>  
+
+            </div>
+            
+
+            <div class="heading">- BUYERS REVIEWS -</div>
+            <div class="review-sec flex">
+                <div id="r1" class="review-tab">
+                    <div class="rating ">5&nbsp;<i class="fa-solid fa-star"></i></div>
+                    <div class="prod-label review-label">LEHENGA</div>
+                    <div class=" review">Fabulous 🤩..just can't believe that this dress is so beautiful, vibrant and lovely. Gives festive vibez. This is really worth the money. The fit is lovely and fabric is soft. Go for it really.... 💜</div>
+                </div>
+                <div id="r2" class="review-tab">
+                    <div class="rating ">4.5&nbsp;<i class="fa-solid fa-star"></i></div>
+                    <div class="prod-label review-label">CAMPUS SHOES</div>
+                    <div class=" review">The fit is perfect, the colour red could have been more pronounced to give it the jazz. The memory foam technology used do not come out as it should have. But a native brand with the price bracket, I guess you can't ask for more.</div>
+                </div>
+                <div id="r3" class="review-tab">
+                    <div class="rating ">4.8&nbsp;<i class="fa-solid fa-star"></i></div>
+                    <div class="prod-label review-label">SWEATSHIRT</div>
+                    <div class=" review">Quality superfine. Price is good and better if u buy it during sale. For fit...id suggest people to size down or order their normal size as it is relaxed fit. Hope it helps.</div>
+                </div>
+                <div id="r4" class="review-tab">
+                    <div class="rating ">4&nbsp;<i class="fa-solid fa-star"></i></div>
+                    <div class="prod-label review-label">JUMPER DRESS</div>
+                    <div class=" review">The sweater is so classy and elegant.i love the quality and fit.thanks </div>
+                </div>
+            </div>
+            
+            <div class="heading">- SPONSORS -</div>
+            <div class="sponsors">
+                <img src="./image/h&m.png">
+                <img src="./image/adidas.png">
+                <img src="./image/asos.png">
+                <img src="./image/burberry.png">
+
+            </div>
+        </div>
+        <div class="adv-3">
+        </div>
+        <footer class="flex">
+            <div class="footer-logo">
+                Fashion.<br><div>
+                <i class="fa-brands fa-instagram fa-sm"></i>
+                <i class="fa-brands fa-x-twitter fa-ssm"></i>
+                </div>
+              </div>
+
+            <div id="support">
+                <span>SUPPORT</span><br><br>
+                <span>
+                  Contact Us<br>
+                  FAQs<br>
+                  Size<br>
+                  Shipping and Returns
+                </span>
+              </div>
+
+              <div id="company">
+              <span>COMPANY</span><br><br>
+              <span>
+                Our Story <br>
+                Careers <br>
+                Terms <br>
+                Conditions
+              </span>
+            </div>
+
+            <div id="contact">
+                <span>CONTACT</span><br><br>
+                <span>
+                  1-420-450-690<br>
+                  1-420-450-691<br>
+                  customercare@fashion.com
+                </span>
+              </div>
+        </footer>
+    </main>
+
+</div>
+<script src="./script.js"></script>
+
+</body>
+</html>
